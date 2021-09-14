@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/styles.css">
-    <link href="style/bootstrap.css">
+    <link href="styles/bootstrap.css">
     <title>Chat-App</title>
 </head>
 <body>
