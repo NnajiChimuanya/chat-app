@@ -20,18 +20,6 @@
                     <p>Blaah blaaah baah error-text</p>
                 </div>
 
-               <div class="field name-details">
-                    <div class="field">
-                        <label for="firstName"> First Name </label>
-                        <input type="text" name="firstName" placeholder="John">
-                    </div>
-
-                    <div class="field">
-                            <label for="lastName"> Last Name </label>
-                            <input type="text" name="lastName" placeholder="Doe">
-                    </div>
-               </div>
-
                 <div class="field">
                     <label for="email"> Email </label>
                     <input type="email" name="email" placeholder="johndoe@mail.com">
@@ -42,27 +30,17 @@
                     <input type="password" name="password">
                 </div>
 
-                <div class="field">
-                    <label for="passwordConfirm"> Confirm Password </label>
-                    <input type="passwordConfirm" name="passwordConfirm">
-                </div>
-
-                <div class="field image">
-                    <label for="passwordConfirm"> Select Image </label>
-                    <input type="file" name="image">
-                </div>
-
 
                 <div class="field button">
                     
-                    <input type="submit" name="submit">
+                    <input type="submit" name="submit" placeholder="Login">
                 </div>
 
             </form>
 
             <hr>
 
-            <div class="Already"> Already have an account? <a href="#">Login</a> </div>
+            <div class="Already"> Don't have an account? <a href="./index.php"> Signup</a> </div>
        </section>
     </div>
     

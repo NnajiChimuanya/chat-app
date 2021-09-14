@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -63,5 +63,6 @@ form  .field .name-details {
 }
 .button input{
    background: black;
+   color: white;
 }
-
+ 
