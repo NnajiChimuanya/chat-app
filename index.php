@@ -53,7 +53,7 @@
                 </div>
 
 
-                <div class="field submit">
+                <div class="field button">
                     
                     <input type="submit" name="submit">
                 </div>
