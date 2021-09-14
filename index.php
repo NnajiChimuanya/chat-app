@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/styles.css">
-    <link href="styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
     <title>Chat-App</title>
 </head>
 <body>
     <div class="wrapper">
        <section class="sign-up">
+           
+
+            <header>Chat-App Signup</header>
+
            <form action="#" method="POST">
-               <div class="error-text">
-                   <p>Blaah blaaah baah error-text</p>
-               </div>
-
-               <header>Chat-App Signup</header>
-
-               <div class="field">
-                   <label for="firstName"> First Name </label>
-                   <input type="text" name="firstName" placeholder="John">
-               </div>
-
-               <div class="field">
-                    <label for="lastName"> Last Name </label>
-                    <input type="text" name="lastName" placeholder="Doe">
+                <div class="error-text">
+                    <p>Blaah blaaah baah error-text</p>
                 </div>
+
+               <div class="field name-details">
+                    <div class="field">
+                        <label for="firstName"> First Name </label>
+                        <input type="text" name="firstName" placeholder="John">
+                    </div>
+
+                    <div class="field">
+                            <label for="lastName"> Last Name </label>
+                            <input type="text" name="lastName" placeholder="Doe">
+                    </div>
+               </div>
 
                 <div class="field">
                     <label for="email"> Email </label>
@@ -43,7 +47,13 @@
                     <input type="passwordConfirm" name="passwordConfirm">
                 </div>
 
-                <div class="field">
+                <div class="field image">
+                    <label for="passwordConfirm"> Select Image </label>
+                    <input type="file" name="image">
+                </div>
+
+
+                <div class="field submit">
                     
                     <input type="submit" name="submit">
                 </div>
