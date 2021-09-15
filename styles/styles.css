@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -12,11 +13,13 @@ body {
     justify-content: center;
     min-height: 100vh;
     
+    
 }
 .wrapper {
-    background: grey ;
+    background: #fff;
     width: 450px;
     border-radius: 15px 15px 0px 15px;
+    
 
 }
 
@@ -27,9 +30,10 @@ body {
 
 .sign-up header{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 1000;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    color: blueviolet;
+    margin-left: 50px;
 }
 
 .sign-up form {
@@ -48,21 +52,36 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    
 }
 
-form  .field .name-details {
-    display: flex;
+.sign-up  form .field a {
+    text-decoration: none;
 }
+
+
+
 
 
 .sign-up form .field input {
     height: 50px;
     outline: none;
     font-size: 16px;
+    border: none;
     border-radius: 5px;
+    padding: 5px;
+    
 }
-.button input{
-   background: black;
+
+.sign-up form .write input{
+    background: rgb(189, 187, 187);
+}
+
+ .button input{
+   background: blueviolet;
    color: white;
+   cursor: pointer;
+   font-size: 50px;
+  
 }
  

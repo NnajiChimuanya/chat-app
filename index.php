@@ -21,28 +21,28 @@
                 </div>
 
                <div class="field name-details">
-                    <div class="field">
+                    <div class="field write">
                         <label for="firstName"> First Name </label>
                         <input type="text" name="firstName" placeholder="John">
                     </div>
 
-                    <div class="field">
+                    <div class="field write">
                             <label for="lastName"> Last Name </label>
                             <input type="text" name="lastName" placeholder="Doe">
                     </div>
                </div>
 
-                <div class="field">
+                <div class="field write">
                     <label for="email"> Email </label>
                     <input type="email" name="email" placeholder="johndoe@mail.com">
                 </div>
 
-                <div class="field">
+                <div class="field write">
                     <label for="password"> Password </label>
                     <input type="password" name="password">
                 </div>
 
-                <div class="field">
+                <div class="field write">
                     <label for="passwordConfirm"> Confirm Password </label>
                     <input type="passwordConfirm" name="passwordConfirm">
                 </div>

@@ -20,12 +20,12 @@
                     <p>Blaah blaaah baah error-text</p>
                 </div>
 
-                <div class="field">
+                <div class="field write">
                     <label for="email"> Email </label>
                     <input type="email" name="email" placeholder="johndoe@mail.com">
                 </div>
 
-                <div class="field">
+                <div class="field write">
                     <label for="password"> Password </label>
                     <input type="password" name="password">
                 </div>
