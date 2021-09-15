@@ -85,3 +85,73 @@ body {
   
 }
  
+
+/* UserList styling */
+
+.wrapper .user {
+    background: darkgrey;
+    padding: 25px 30px;
+}
+
+.wrapper .user .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.wrapper .user .header .content{
+    display: flex;
+}
+
+.wrapper .user .header .content img {
+    height: 50px;
+    width: 50px;
+}
+
+.wrapper .user .header .content .details {
+    margin-left: 15px;
+}
+
+.wrapper .user .header .logout {
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.wrapper .user .search {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.user .search .text {
+    font-size: 15px;
+}
+
+.user .search input {
+    position: absolute;
+    width: calc(100% - 50px);
+    height: 45px;
+    outline: none;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.user .search button {
+    background: #333;
+    color: #fff;
+    height: 45px;
+    border-radius: 5px;
+}

@@ -10,14 +10,34 @@
 </head>
 <body>
     <div class="wrapper">
-       <section class="sign-up">
-           
-
-            <header>Chat-App </header>
-
-          
-
+       <section class=" user">
+           <header>Chat-App </header>
             <hr>
+
+            <div class="header">
+                <div class="content">
+                    <img src="./img.jpg" alt="">
+                    <div class="details">
+                        <span>Nnaji Chimuanya</span>
+                        <p>Active now</p>
+                    </div>
+                </div>
+                <a class="logout" href="#">Logout</a>
+            </div>
+
+            <div class="search">
+                <span class="text">Select a user to start chat</span>
+                <input type="text" placeholder="Enter name to search...">
+                <button>search</button>
+            </div>
+
+            <div class="users-list">
+                
+            </div>
+        </section>
+
+
+
 
             
     </div>
