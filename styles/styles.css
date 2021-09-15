@@ -1,11 +1,11 @@
- * {
+ /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     
-}
+} */
 
 body {
     display: flex;
@@ -82,6 +82,7 @@ body {
    color: white;
    cursor: pointer;
    font-size: 50px;
+margin: 10px;
   
 }
  
@@ -93,12 +94,14 @@ body {
     padding: 25px 30px;
 }
 
-.wrapper .user .header {
+.wrapper .user .header,
+.users-list a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 10px;
+    text-decoration: none;
 }
 
 .wrapper img {
@@ -106,7 +109,8 @@ body {
     border-radius: 50%;
 }
 
-.wrapper .user .header .content{
+.wrapper .user .header .content,
+.users-list a .content{
     display: flex;
 }
 
@@ -115,7 +119,7 @@ body {
     width: 50px;
 }
 
-.wrapper .user .header .content .details {
+.header .content .details {
     margin-left: 15px;
 }
 
@@ -155,3 +159,36 @@ body {
     height: 45px;
     border-radius: 5px;
 }
+
+.user .users-list {
+    height: 350px;
+    overflow: auto;
+    padding-right: 15px;
+    border-bottom-color: #f1f1f1;
+}
+
+.user .users-list::-webkit-scrollbar{
+    width: 0px;
+}
+
+  .users-list a:last-child{
+   border: none;
+}
+
+.users-list a .content img {
+    height: 40px;
+    width: 40px;
+}
+
+.users-list a .content .details{
+    margin-left: 15px;
+    color: #000;
+
+}
+
+.users-list a .content .details p {
+    color: #67676a;
+}
+
+
+

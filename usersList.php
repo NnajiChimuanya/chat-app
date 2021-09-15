@@ -32,7 +32,65 @@
             </div>
 
             <div class="users-list">
-                
+                <a href="#">
+                    <div class="content">
+                        <img src="img.jpg" alt="">
+                        <div class="details">
+                            <span>Nnaji Chimuanya</span>
+                            <p>This a message</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="content">
+                        <img src="img.jpg" alt="">
+                        <div class="details">
+                            <span>Nnaji Chimuanya</span>
+                            <p>This a message</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="content">
+                        <img src="img.jpg" alt="">
+                        <div class="details">
+                            <span>Nnaji Chimuanya</span>
+                            <p>This a message</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="content">
+                        <img src="img.jpg" alt="">
+                        <div class="details">
+                            <span>Nnaji Chimuanya</span>
+                            <p>This a message</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="content">
+                        <img src="img.jpg" alt="">
+                        <div class="details">
+                            <span>Nnaji Chimuanya</span>
+                            <p>This a message</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="content">
+                        <img src="img.jpg" alt="">
+                        <div class="details">
+                            <span>Nnaji Chimuanya</span>
+                            <p>This a message</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
