@@ -194,6 +194,7 @@ margin: 10px;
 /* chat area */
 .wrapper .chat-area{
     width: 100%;
+    border-radius: 10px;
     
 }
 
@@ -280,6 +281,29 @@ margin: 10px;
     max-width: calc(100% - 130px);
 }
 
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    background: darkgrey;
+}
+
+.chat-area .typing-area input {
+    height: 45px;
+    width: calc(100% - 58px);
+    outline: none;
+
+    border-radius: 5px;
+}
+
+.chat-area .typing-area button {
+    width: 58px;
+    outline: none;
+    border: none;
+    border-radius:  0 5px 5px 0;
+    background: #000;
+    color: #f1f1f1;
+}
 
 
 

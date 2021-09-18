@@ -64,9 +64,11 @@
                 </div>
             </div>
 
-            
 
-          
+            <form action="#" class="typing-area">
+                <input type="text" placeholder="Type a message here...">
+                <button>Send</button>
+            </form>
         
         </section>
 
