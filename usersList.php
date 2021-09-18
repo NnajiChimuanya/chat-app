@@ -11,10 +11,7 @@
 <body>
     <div class="wrapper">
        <section class=" user">
-           <header>Chat-App </header>
-            <hr>
-
-            <div class="header">
+           <div class="header">
                 <div class="content">
                     <img src="./img.jpg" alt="">
                     <div class="details">
