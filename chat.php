@@ -12,6 +12,7 @@
     <div class="wrapper">
        <section class=" chat-area">
            <div class="header">
+                <a href="#" class="back-icon" ><--</a>
                 <div class="content">
                     <img src="./img.jpg" alt="">
                     <div class="details">
@@ -21,6 +22,49 @@
                 </div>
                
             </div>
+
+            <div class="chat-box">
+                <div class="chat chat chat-outgoing">
+                    <div class="details">
+                        <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
+                    </div>
+                </div>
+
+                <div class="chat chat chat-incoming">
+                    <img src="img2.jpg" alt="">
+                    <div class="details">
+                        <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
+                    </div>
+                </div>
+
+                <div class="chat chat chat-outgoing">
+                    <div class="details">
+                        <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
+                    </div>
+                </div>
+
+                <div class="chat chat chat-incoming">
+                    <img src="img2.jpg" alt="">
+                    <div class="details">
+                        <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
+                    </div>
+                </div>
+
+                <div class="chat chat chat-outgoing">
+                    <div class="details">
+                        <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
+                    </div>
+                </div>
+
+                <div class="chat chat chat-incoming">
+                    <img src="img2.jpg" alt="">
+                    <div class="details">
+                        <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
+                    </div>
+                </div>
+            </div>
+
+            
 
           
         
