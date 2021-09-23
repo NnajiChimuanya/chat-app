@@ -15,7 +15,7 @@
 
             <header>Chat-App Signup</header>
 
-           <form action="./php/signup.php" method="POST">
+           <form action="./php/signup.php" method="POST" enctype="multipart/form-data">
                 <div class="error-text">
                     <p>Blaah blaaah baah error-text</p>
                 </div>
