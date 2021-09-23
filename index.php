@@ -15,7 +15,7 @@
 
             <header>Chat-App Signup</header>
 
-           <form action="#" method="POST">
+           <form action="./php/signup.php" method="POST">
                 <div class="error-text">
                     <p>Blaah blaaah baah error-text</p>
                 </div>
@@ -65,6 +65,8 @@
             <div class="Already"> Already have an account? <a href="./login.php">Login</a> </div>
        </section>
     </div>
+
+  
     
 </body>
 </html>
