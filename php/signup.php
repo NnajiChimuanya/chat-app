@@ -5,6 +5,7 @@
     $lastname = $_POST["lastName"];
     $email = $_POST["email"];
     $password = $_POST["password"];
+    $passwordConfirm = $_POST["passwordConfirm"];
 
     $name = $_FILES["image"]["name"];
     $type = $_FILES["image"]["type"];
@@ -21,7 +22,22 @@
             echo $email . "<br>";
            
             if(!empty($firstname) && !empty($lastname) && !empty($email) && !empty($password)) {
-                echo "all good";
+                $result = $conn->query("SELECT * FROM users where email = '$email'");
+                if($result->num_rows > 0 ) {
+                    echo "Email already exists";
+                } else {
+                    if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+                        "invalid email"; 
+                    } else {
+                        if($password === $passwordConfirm) {
+                            $password = password_hash($password, PASSWORD_DEFAULT);
+                           
+                            
+                        } else {
+                            echo "Passwords dont match";
+                        }
+                    }
+                }
             } else {
                 echo "input required fields";
             }
