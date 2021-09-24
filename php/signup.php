@@ -32,6 +32,18 @@
                         if($password === $passwordConfirm) {
                             $password = password_hash($password, PASSWORD_DEFAULT);
                            
+
+                            $available_ext = array("jpeg", "jpg", "png");
+
+                           $name_array = explode(".", $name);
+                           $ext = end($name_array);
+                           echo $ext;
+
+                           if(in_array($ext, $name_array)) {
+                               echo "okay";
+                           } else {
+                               echo "Select a valid image format";
+                           }
                             
                         } else {
                             echo "Passwords dont match";
