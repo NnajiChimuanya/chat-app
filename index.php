@@ -16,9 +16,17 @@
             <header>Chat-App Signup</header>
 
            <form action="./php/signup.php" method="POST" enctype="multipart/form-data">
-                <div class="error-text">
+                <!-- <div class="error-text">
                     <p>Blaah blaaah baah error-text</p>
-                </div>
+                </div> -->
+
+                <?php
+                    if(isset($_GET["error"])) {
+                       echo "<div class='error-text'><p>". $_GET["error"] . "</p></div>";
+                    }
+
+
+                ?>
 
                <div class="field name-details">
                     <div class="field write">

@@ -24,10 +24,12 @@
             if(!empty($firstname) && !empty($lastname) && !empty($email) && !empty($password)) {
                 $result = $conn->query("SELECT * FROM users where email = '$email'");
                 if($result->num_rows > 0 ) {
-                    echo "Email already exists";
+                    header("Location: ../index.php?error=email+already+exists");
+                    exit();
                 } else {
                     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-                        "invalid email"; 
+                        header("Location: ../index.php?error=invalid+email+format");
+                        exit();
                     } else {
                         if($password === $passwordConfirm) {
                             $password = password_hash($password, PASSWORD_DEFAULT);
@@ -37,11 +39,10 @@
 
                            $name_array = explode(".", $name);
                            $ext = end($name_array);
-                           echo $ext;
+                           
 
-                           if(in_array($ext, $name_array)) {
-                               echo "okay";
-
+                           if($ext === "jpeg" || $ext === "jpg" || $ext === "png") {
+                              
                                $time = time();
 
                                $location = "./images/".$time.$firstname.$lastname.$name;
@@ -54,7 +55,7 @@
                                    $stmt->bind_param("ssssss", $firstname, $lastname, $email, $password, $location, $status);
 
                                    if($stmt->execute()){
-                                       echo "new account created";
+                                       
 
                                        $result = $conn->query("SELECT * FROM users WHERE email = '$email'");
 
@@ -62,26 +63,30 @@
                                            $row = $result->fetch_assoc();
 
                                            $id = $row["id"];
-                                           echo $id;
+                                          
                                        }
                                        
                                    }
                                 
                                 } else {
-                                   echo  "error in uploading image";
+                                    header("Location: ../index.php?error=unexpected+error+occured");
+                                    exit();
                                }
 
                            } else {
-                               echo "Select a valid image format";
+                            header("Location: ../index.php?error=upload+valid+image+format(jpeg,jpg,png)");
+                            exit();
                            }
                             
                         } else {
-                            echo "Passwords dont match";
+                            header("Location: ../index.php?error=password+don't+match");
+                            exit();
                         }
                     }
                 }
             } else {
-                echo "input required fields";
+                header("Location: ../index.php?error=input+required+fields");
+                exit();
             }
 
         } else {
