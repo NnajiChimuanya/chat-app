@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/bootstrap.css">
+    <script src="https://use.fontawesome.com/28b931adaa.js"></script>
     <title>Chat-App</title>
 </head>
 <body>

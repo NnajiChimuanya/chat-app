@@ -15,7 +15,7 @@
 
             <header>Chat-App Signup</header>
 
-           <form action="#" method="POST">
+           <form action="./php/login.php" method="POST">
                 <div class="error-text">
                     <p>Blaah blaaah baah error-text</p>
                 </div>

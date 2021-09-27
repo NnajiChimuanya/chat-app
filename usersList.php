@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/28b931adaa.js"></script>
+    
     <title>Chat-App</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
             <div class="search">
                 <span class="text">Select a user to start chat</span>
                 <input type="text" placeholder="Enter name to search...">
-                <button>search</button>
+                <button><i class="fas fa-search"></i></button>
             </div>
 
             <div class="users-list">
