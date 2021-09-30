@@ -27,13 +27,13 @@ if(isset($_POST["submit"])) {
                
 
             } else {
-                header("Location: ../login.php?error=incorrect+password");
+                header("Location: ../index.php?error=incorrect+password");
                 exit();
 
                 // echo "incorrect password";
             }
         } else {
-            header("Location: ../login.php?error=email+does+not+exist");
+            header("Location: ../index.php?error=email+does+not+exist");
             exit();
 
            // echo "email does not exist";
@@ -41,7 +41,7 @@ if(isset($_POST["submit"])) {
 
 
     }else {
-        header("Location: ../login.php?error=email+and+password+required!!");
+        header("Location: ../index.php?error=email+and+password+required!!");
         exit();
 
        // echo "email and password required";

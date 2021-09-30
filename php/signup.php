@@ -24,11 +24,11 @@
             if(!empty($firstname) && !empty($lastname) && !empty($email) && !empty($password)) {
                 $result = $conn->query("SELECT * FROM users where email = '$email'");
                 if($result->num_rows > 0 ) {
-                    header("Location: ../index.php?error=email+already+exists");
+                    header("Location: ../signup.php?error=email+already+exists");
                     exit();
                 } else {
                     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-                        header("Location: ../index.php?error=invalid+email+format");
+                        header("Location: ../signup.php?error=invalid+email+format");
                         exit();
                     } else {
                         if($password === $passwordConfirm) {
@@ -69,23 +69,23 @@
                                    }
                                 
                                 } else {
-                                    header("Location: ../index.php?error=unexpected+error+occured");
+                                    header("Location: ../signup.php?error=unexpected+error+occured");
                                     exit();
                                }
 
                            } else {
-                            header("Location: ../index.php?error=upload+valid+image+format(jpeg,jpg,png)");
+                            header("Location: ../signup.php?error=upload+valid+image+format(jpeg,jpg,png)");
                             exit();
                            }
                             
                         } else {
-                            header("Location: ../index.php?error=password+don't+match");
+                            header("Location: ../signup.php?error=password+don't+match");
                             exit();
                         }
                     }
                 }
             } else {
-                header("Location: ../index.php?error=input+required+fields");
+                header("Location: ../signup.php?error=input+required+fields");
                 exit();
             }
 
