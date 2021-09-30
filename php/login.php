@@ -21,21 +21,30 @@ if(isset($_POST["submit"])) {
                 $_SESSION['image'] = $row["image"];
                 $_SESSION['status'] = $row["status"];
 
+                
                 header("Location: ../usersList.php");
+
+               
 
             } else {
                 header("Location: ../login.php?error=incorrect+password");
                 exit();
+
+                // echo "incorrect password";
             }
         } else {
             header("Location: ../login.php?error=email+does+not+exist");
             exit();
+
+           // echo "email does not exist";
         }
 
 
     }else {
         header("Location: ../login.php?error=email+and+password+required!!");
         exit();
+
+       // echo "email and password required";
     }
     
 }

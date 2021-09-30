@@ -23,6 +23,12 @@
 
                 ?>
 
+                <div class ='error-text loginerrortext' id="error">
+                     <p>
+                         
+                     </p>
+                </div>
+
                 <div class="field write">
                     <label for="email"> Email </label>
                     <input type="email" name="email" placeholder="johndoe@mail.com">
@@ -36,7 +42,7 @@
 
                 <div class="field button">
                     
-                    <input type="submit" name="submit" placeholder="Login">
+                    <input  type="submit" name="submit" placeholder="Login">
                 </div>
 
             </form>
@@ -46,6 +52,9 @@
             <div class="Already"> Don't have an account? <a href="./index.php"> Signup</a> </div>
        </section>
     </div>
+
+
+    
     
 </body>
 </html>
