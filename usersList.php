@@ -26,7 +26,7 @@
        <section class=" user">
            <div class="header">
                 <div class="content">
-                    <img src="./img.jpg" alt="">
+                    <img src="./php/<?php echo $_SESSION['image']?>" alt="">
                     <div class="details">
                         <span> <?php  echo $_SESSION['firstname'].' '. $_SESSION['lastname']  ?>  </span>
                         <p><?php  echo $_SESSION['status'] ?></p>

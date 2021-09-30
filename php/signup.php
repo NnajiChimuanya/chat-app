@@ -45,7 +45,7 @@
                               
                                $time = time();
 
-                               $location = "./images/".$time.$firstname.$lastname.$name;
+                               $location = "images/".$time.$firstname.$lastname.$name;
                                
 
                                if(move_uploaded_file($temp, $location)) {
