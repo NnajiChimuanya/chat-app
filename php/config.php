@@ -1,3 +1,3 @@
 <?php
-$conn = new mysqli("localhost", "Muanyachi", "Muanyachi", "chat-app");
+$conn = new mysqli("localhost", "root", "", "chat-app");
 
