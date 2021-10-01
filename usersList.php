@@ -43,8 +43,8 @@
 </svg></button>
             </div>
 
-            <div class="users-list">
-                <a href="#">
+            <div class="users-list" id="usern">
+                <!-- <a href="#">
                     <div class="content">
                         <img src="img.jpg" alt="">
                         <div class="details">
@@ -52,7 +52,7 @@
                             <p>This a message</p>
                         </div>
                     </div>
-                </a>
+                </a> -->
 
                
             </div>

@@ -1,16 +1,19 @@
-const usersList = document.querySelector(".usersList");
+const usersList = document.querySelector(".user .usersList");
 
 
 setInterval(() => {
     let xhr = new XMLHttpRequest();
+    xhr.open("GET", "php/usersList.php", true);
     xhr.onreadystatechange = () => {
-        if(xhr.readyState == 4 && xhr.status == 200) {
-            let data = "xxxxx";
-           console.log(data)
+        if(xhr.readyState === 4 && xhr.status === 200) {
+            
+            let data = xhr.response;
+            document.getElementById("usern").innerHTML = data;
+        
         }
     }
-    xhr.open();
+   
     xhr.send();
   
 
-}, 500)
+}, 5000)
