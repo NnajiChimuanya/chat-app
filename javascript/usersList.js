@@ -1,10 +1,16 @@
-const searchButton = document.querySelector(".user .search button");
-const searchInput = document.querySelector(".user .search input");
+const usersList = document.querySelector(".usersList");
 
 
-searchButton.onclick = () => {
-    searchInput.toggle("active");
-    
-    searchButton.toggle("active");
-    searchButton.focus();
-};
+setInterval(() => {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState == 4 && xhr.status == 200) {
+            let data = "xxxxx";
+           console.log(data)
+        }
+    }
+    xhr.open();
+    xhr.send();
+  
+
+}, 500)
