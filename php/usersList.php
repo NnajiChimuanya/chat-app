@@ -17,7 +17,7 @@ if($result->num_rows == 1) {
     while($row = $result->fetch_assoc()) {
         $output .= "<a href='#'>
         <div class='content'>
-            <img src='./'". $row['image']." alt=''>
+            <img src='php/{$row['image']}' alt=''>
             <div class='details'>
                 <span>" . $row['firstname']. ' '.  $row['lastname'] ."</span>
                 <p>This a message</p>
