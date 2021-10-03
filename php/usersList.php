@@ -24,8 +24,9 @@ if($result->num_rows == 1) {
             </div>
         </div>
         </a>";
-        echo $output;
+        
     }
+    echo $output;
 }
 
 

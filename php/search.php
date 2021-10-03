@@ -10,9 +10,8 @@ $output = "";
 $result = $conn->query("SELECT * FROM users where firstname LIKE '%$searchValue%' OR lastname LIKE '%$searchValue%' ");
 
 if($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-
-    $output .= "<a href='#'>
+    while($row = $result->fetch_assoc()){
+        $output .= "<a href='#'>
         <div class='content'>
             <img src='php/{$row['image']}' alt=''>
             <div class='details'>
@@ -21,6 +20,10 @@ if($result->num_rows > 0) {
             </div>
         </div>
         </a>";
+    }
+    
+
+   
         echo $output;
 } else {
     $output = "User not found";
