@@ -8,7 +8,11 @@ setInterval(() => {
         if(xhr.readyState === 4 && xhr.status === 200) {
             
             let data = xhr.response;
-            document.getElementById("usern").innerHTML = data;
+
+            if(!search.classList.contains('active')) {
+                document.getElementById("usern").innerHTML = data;
+            }
+            
         
         }
     }
