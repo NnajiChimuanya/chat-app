@@ -2,7 +2,10 @@ const search = document.getElementById("search");
 
 
 
+
+
 search.onkeyup = () => {
+
     let searchValue = search.value;
     if(searchValue != ""){
         search.classList.add("active");

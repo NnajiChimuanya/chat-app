@@ -14,18 +14,7 @@ $output = "";
 if($result->num_rows == 1) {
     $output .= "No user available";
 } else if($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        $output .= "<a href='#'>
-        <div class='content'>
-            <img src='php/{$row['image']}' alt=''>
-            <div class='details'>
-                <span>" . $row['firstname']. ' '.  $row['lastname'] ."</span>
-                <p>This a message</p>
-            </div>
-        </div>
-        </a>";
-        
-    }
+   include_once "data.php";
     echo $output;
 }
 

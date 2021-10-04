@@ -1,6 +1,7 @@
 const usersList = document.querySelector(".user .usersList");
 
 
+
 setInterval(() => {
     let xhr = new XMLHttpRequest();
     xhr.open("GET", "php/usersList.php", true);
@@ -20,4 +21,4 @@ setInterval(() => {
     xhr.send();
   
 
-}, 5000)
+}, 500)
