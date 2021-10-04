@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['id'])){
+        header("Location: ./index.php");
+        exit();
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,13 +24,26 @@
 <body>
     <div class="wrapper">
        <section class=" chat-area">
+            <?php
+                $id = $_GET['id'];
+
+                include_once "./php/config.php";
+
+                $result = $conn->query("SELECT * from users WHERE id = '$id'");
+                if($result->num_rows > 0){
+                    $row = $result->fetch_assoc();
+                }
+
+            ?>
+
+
            <div class="header">
-                <a href="#" class="back-icon" ><i class="im im-arrow-left-circle"></i></a>
+                <a href="./userList" class="back-icon" ><--</a>
                 <div class="content">
-                    <img src="./img.jpg" alt="">
+                    <img src="php/<?php  echo $row['image'];  ?>" alt="">
                     <div class="details">
-                        <span>Nnaji Chimuanya</span>
-                        <p>Active now</p>
+                        <span><?php  echo $row['firstname']." ".$row['lastname'];   ?></span>
+                        <p><?php  echo $row['status']; ?></p>
                     </div>
                 </div>
                

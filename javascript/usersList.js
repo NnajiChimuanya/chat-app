@@ -21,4 +21,4 @@ setInterval(() => {
     xhr.send();
   
 
-}, 500)
+}, 400)
