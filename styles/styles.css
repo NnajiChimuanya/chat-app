@@ -308,8 +308,11 @@ margin: 10px;
     height: 45px;
     width: calc(100% - 58px);
     outline: none;
-
+    overflow: auto;
     border-radius: 5px;
+    padding: 8px 16px;
+    /* word-wrap: break-word;
+    word-break: keep-all; */
 }
 
 .chat-area .typing-area button {

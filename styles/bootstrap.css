@@ -5620,7 +5620,7 @@ textarea.form-control-lg {
   white-space: normal;
   line-break: auto;
   font-size: 0.875rem;
-  word-wrap: break-word;
+  word-wrap: -word;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
