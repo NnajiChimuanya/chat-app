@@ -50,7 +50,7 @@
             </div>
 
             <div class="chat-box">
-                <div class="chat chat chat-outgoing">
+                <!-- <div class="chat chat chat-outgoing">
                     <div class="details">
                         <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
                     </div>
@@ -87,7 +87,7 @@
                     <div class="details">
                         <p> Lorm ipsum blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah blaaaaaaaah</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 

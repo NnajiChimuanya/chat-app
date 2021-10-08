@@ -1,11 +1,28 @@
 const form = document.querySelector("form");
 const message = form.querySelector("input");
 const submit = form.querySelector("button");
+const chatbox = document.querySelector(".chat-box");
 
 
 form.onsubmit = (x) => {
     x.preventDefault();
 }
+
+
+setInterval(()=>{
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "php/chat.php", true);
+    xhr.onreadystatechange = () => {
+        if(xhr.readyState === 4 && xhr.status === 200) {
+            
+            let data = xhr.response;
+            chatbox.innerHTML = data;
+        
+        }
+    }
+    const formData = new FormData(form);
+    xhr.send(formData);
+}, 500)
 
 
 submit.onclick = () => {
