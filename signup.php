@@ -16,28 +16,12 @@
 
             <header>Chat-App Signup</header>
 
-<<<<<<< HEAD
-           <form action="./php/signup.php" method="POST" enctype="multipart/form-data">
-                <!-- <div class="error-text">
-                    <p>Blaah blaaah baah error-text</p>
-                </div> -->
-
-                <?php
-                    if(isset($_GET["error"])) {
-                       echo "<div class='error-text'><p>". $_GET["error"] . "</p></div>";
-                    }
-
-
-                ?>
-
-=======
            <form action="" method="" enctype="multipart/form-data">
                 <div class="error-text">
                    
                 </div>
 
                
->>>>>>> 9719a5f... implemented Ajax for the signup
                <div class="field name-details">
                     <div class="field write">
                         <label for="firstName"> First Name </label>
@@ -62,11 +46,7 @@
 
                 <div class="field write">
                     <label for="passwordConfirm"> Confirm Password </label>
-<<<<<<< HEAD
-                    <input type="passwordConfirm" name="passwordConfirm">
-=======
                     <input type="password" name="passwordConfirm">
->>>>>>> 9719a5f... implemented Ajax for the signup
                 </div>
 
                 <div class="field image">
@@ -89,10 +69,6 @@
     </div>
 
   
-<<<<<<< HEAD
-    
-=======
     <script src="./javascript/signup.js"></script>
->>>>>>> 9719a5f... implemented Ajax for the signup
 </body>
 </html>
