@@ -12,6 +12,7 @@
     $temp = $_FILES["image"]["tmp_name"];
 
     
+<<<<<<< HEAD
     
 
 
@@ -30,6 +31,26 @@
                     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
                         header("Location: ../signup.php?error=invalid+email+format");
                         exit();
+=======
+    $output = "";
+    
+
+
+    
+        if($conn) {
+          
+           
+            if(!empty($firstname) && !empty($lastname) && !empty($email) && !empty($password) && !empty($_FILES['image']) ) {
+                $result = $conn->query("SELECT * FROM users where email = '$email'");
+                if($result->num_rows > 0 ) {
+                  
+                    $output = "Email already exists";
+                    echo $output;
+                } else {
+                    if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+                        $output = "Invalid Email format";
+                        echo $output;
+>>>>>>> 9719a5f... implemented Ajax for the signup
                     } else {
                         if($password === $passwordConfirm) {
                             $password = password_hash($password, PASSWORD_DEFAULT);
@@ -64,11 +85,17 @@
 
                                            $id = $row["id"];
                                           
+<<<<<<< HEAD
+=======
+                                           $output = "success";
+                                           echo $output;
+>>>>>>> 9719a5f... implemented Ajax for the signup
                                        }
                                        
                                    }
                                 
                                 } else {
+<<<<<<< HEAD
                                     header("Location: ../signup.php?error=unexpected+error+occured");
                                     exit();
                                }
@@ -81,18 +108,41 @@
                         } else {
                             header("Location: ../signup.php?error=password+don't+match");
                             exit();
+=======
+                                    $output = "Unexpected error occurred";
+                                    echo $output;
+                               }
+
+                           } else {
+                            $output = "Upload valid image format (jpg, jpeg or png)";
+                            echo $output;
+                           }
+                            
+                        } else {
+                            $output = "Passwords dont match";
+                            echo $output;
+>>>>>>> 9719a5f... implemented Ajax for the signup
                         }
                     }
                 }
             } else {
+<<<<<<< HEAD
                 header("Location: ../signup.php?error=input+required+fields");
                 exit();
+=======
+                $output = "All fields are required";
+                echo $output;
+>>>>>>> 9719a5f... implemented Ajax for the signup
             }
 
         } else {
             echo $conn->error_reporting();
         }
+<<<<<<< HEAD
     }
+=======
+    
+>>>>>>> 9719a5f... implemented Ajax for the signup
     
     
     ?>

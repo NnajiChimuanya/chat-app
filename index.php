@@ -13,6 +13,7 @@
        <section class="sign-up">
            
 
+<<<<<<< HEAD
             <header>Chat-App Signup</header>
 
            <form action="./php/login.php" method="POST">
@@ -22,6 +23,17 @@
                      }
 
                 ?>
+=======
+            <header>Chat-App </header>
+
+           <form action="" method="" >
+               
+                     <!-- if(isset($_GET["error"])) {
+                         echo "<div class='error-text'><p>". $_GET["error"] . "</p></div>";
+                      } -->
+
+              
+>>>>>>> 9719a5f... implemented Ajax for the signup
 
                 <div class ='error-text loginerrortext' id="error">
                      <p>
@@ -55,6 +67,10 @@
 
 
     
+<<<<<<< HEAD
     
+=======
+    <script src="./javascript/login.js"></script>
+>>>>>>> 9719a5f... implemented Ajax for the signup
 </body>
 </html>
