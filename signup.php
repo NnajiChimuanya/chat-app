@@ -64,7 +64,7 @@
 
             <hr>
 
-            <div class="Already"> Already have an account? <a href="./index.php">Login</a> </div>
+            <div class="already"> Already have an account? <a href="./index.php">Login</a> </div>
        </section>
     </div>
 

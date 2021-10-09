@@ -13,7 +13,7 @@
        <section class="sign-up">
            
 
-            <header>Chat-App </header>
+        <header>Chat-App </header>
 
            <form action="" method="" >
                
@@ -49,7 +49,7 @@
 
             <hr>
 
-            <div class="Already"> Don't have an account? <a href="./signup.php"> Signup</a> </div>
+            <div class="already"> Don't have an account? <a href="./signup.php"> Signup</a> </div>
        </section>
     </div>
 

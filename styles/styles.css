@@ -1,11 +1,12 @@
- /* * {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     
-} */
+    
+}
 
 body {
     display: flex;
@@ -60,6 +61,7 @@ body {
 
 .sign-up  form .field a {
     text-decoration: none;
+   
 }
 
 
@@ -93,6 +95,11 @@ body {
    margin: 10px;
    border-radius: 30px;
   
+}
+
+.already a {
+    color: #f1f1f1;
+    text-decoration: none;
 }
  
 
@@ -136,6 +143,12 @@ body {
 
 .header .content .details {
     margin-left: 15px;
+    
+}
+
+.header .content .details span {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .wrapper .user .header .logout {
@@ -163,7 +176,9 @@ body {
     width: calc(100% - 50px);
     height: 45px;
     outline: none;
-    padding: 0 13px;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     font-size: 16px;
     border-radius: 5px;
     
@@ -252,7 +267,7 @@ body {
     display: flex;
     align-items: center;
     padding: 18px 30px;
-    background: darkgrey;
+    background: rgb(9, 172, 184);
 }
 
 .chat-area .header .back-icon {
@@ -293,8 +308,9 @@ body {
 }
 
 .chat-box .chat-outgoing {
-    margin-top: 15px;
+    
     display: flex;
+    margin-bottom: 3px;
 }
 
 .chat-outgoing .details{
@@ -312,16 +328,18 @@ body {
 .chat-box .chat-incoming {
     display: flex;
     align-items: flex-end;
+    margin-bottom: 3px;
 }
 
 .chat-box .chat-incoming img {
     height: 35px;
     width: 35px;
+    margin-right: 3px;
 }
 
 .chat-incoming .details {
-    background: darkgray;
-    color: #333;
+    background: white;
+    color: purple;
     border-radius: 18px 18px 18px 0;
 }
 
@@ -334,7 +352,7 @@ body {
     padding: 18px 30px;
     display: flex;
     justify-content: space-between;
-    background: darkgrey;
+    background: rgb(9, 172, 184);
 }
 
 .chat-area .typing-area input {

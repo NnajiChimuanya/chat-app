@@ -33,7 +33,8 @@
                             <p><?php  echo $_SESSION['status'] ?></p>
                         </div>
                     </div>
-                    <a class="logout" href="./php/logout.php">Logout</a>
+                    
+                    <a class="logout" href="./php/logout.php">[-></a>
                 </div>
 
                 <div class="search">
