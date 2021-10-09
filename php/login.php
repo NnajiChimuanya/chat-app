@@ -9,6 +9,11 @@ $password = $_POST["password"];
 if(!empty($email) && !empty($password)) {
     include_once "./config.php";
 
+    if(!$conn) {
+        $output = "Error connecting to database";
+        echo $output;
+    }
+
     $result = $conn->query("SELECT * FROM users WHERE email = '$email'");
     if($result->num_rows > 0) {
         $row = $result->fetch_assoc();
