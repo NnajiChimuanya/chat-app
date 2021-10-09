@@ -17,7 +17,7 @@ submit.onclick = () => {
            
             if(data === "success") {
                 console.log(data)
-                location.href = "usersList.php";
+                location.href = "./usersList.php";
 
             } else {
                 form.querySelector(".error-text").innerHTML = data;

@@ -1,6 +1,6 @@
 <?php
   while($row = $result->fetch_assoc()) {
-    $output .= "<a href='../chat.php?id={$row['id']}'>
+    $output .= "<a href='chat.php?id={$row['id']}'>
     <div class='content'>
         <img src='php/{$row['image']}' alt=''>
         <div class='details'>

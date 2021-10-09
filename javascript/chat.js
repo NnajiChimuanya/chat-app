@@ -26,6 +26,7 @@ setInterval(()=>{
 
 
 submit.onclick = () => {
+    
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "php/chatInsert.php", true);
     xhr.onreadystatechange = () => {
