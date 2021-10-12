@@ -1,12 +1,12 @@
 <?php
 
 session_start();
+$outgoing_id = $_SESSION['id'];
 
 include_once "./config.php";
 
 $result = $conn->query("SELECT * FROM users");
 $output = "";
-
 
 
 
