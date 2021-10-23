@@ -5,7 +5,7 @@ $outgoing_id = $_SESSION['id'];
 
 include_once "./config.php";
 
-$result = $conn->query("SELECT * FROM users");
+$result = $conn->query("SELECT * FROM users WHERE NOT id = {$outgoing_id}");
 $output = "";
 
 
