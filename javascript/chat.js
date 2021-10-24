@@ -8,6 +8,12 @@ form.onsubmit = (x) => {
     x.preventDefault();
 }
 
+chatbox.onmouseenter = () => {
+    chatbox.classList.add("active")
+}
+chatbox.onmouseleave = () => {
+    chatbox.classList.remove("active")
+}
 
 setInterval(()=>{
     let xhr = new XMLHttpRequest();
@@ -17,12 +23,24 @@ setInterval(()=>{
             
             let data = xhr.response;
             chatbox.innerHTML = data;
+            if(!chatbox.classList.contains("active")){
+                scrollToBottom();
+            }
         
         }
     }
     const formData = new FormData(form);
     xhr.send(formData);
 }, 500)
+
+
+
+
+
+
+function scrollToBottom() {
+    chatbox.scrollTop = chatbox.scrollHeight
+}
 
 
 submit.onclick = () => {
